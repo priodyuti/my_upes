@@ -1,0 +1,239 @@
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git config --global user.name "priodyuti"
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git config --global user.email priodyuti.86@gmail.com
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git config user.name
+priodyuti
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git config user.email
+priodyuti.86@gmail.com
+
+THINKPAD@THINKPAD MINGW64 ~
+$ mkdir upesdemo
+
+THINKPAD@THINKPAD MINGW64 ~
+$ ls
+'3D Objects'/                  Links/                                                                                         Recent@
+ AndroidStudioProjects/       'Local Settings'@                                                                              'Saved Games'/
+ AppData/                      MicrosoftEdgeBackups/                                                                          Searches/
+'Application Data'@            Music/                                                                                         SendTo@
+'Cisco Packet Tracer 7.3.0'/  'My Documents'@                                                                                'Start Menu'@
+ Contacts/                     NTUSER.DAT                                                                                     Templates@
+ Cookies@                      NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                        Videos/
+ Desktop/                      NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms   ntuser.dat.LOG1
+ Documents/                    NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms   ntuser.dat.LOG2
+ Downloads/                    NetHood@                                                                                       ntuser.ini
+ Dropbox/                      OneDrive/                                                                                      source/
+ Favorites/                    Pictures/                                                                                      upesdemo/
+ IntelGraphicsProfiles/        PrintHood@
+
+THINKPAD@THINKPAD MINGW64 ~
+$ pwd
+/c/Users/THINKPAD
+
+THINKPAD@THINKPAD MINGW64 ~
+$ cd upesdemo/
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo
+$ ls
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo
+$ cd
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git log
+fatal: not a git repository (or any of the parent directories): .git
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git log
+fatal: not a git repository (or any of the parent directories): .git
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git log
+fatal: not a git repository (or any of the parent directories): .git
+
+THINKPAD@THINKPAD MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/THINKPAD/.git/
+
+THINKPAD@THINKPAD MINGW64 ~ (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+THINKPAD@THINKPAD MINGW64 ~ (master)
+$ cd upesdemo/
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git init
+Initialized empty Git repository in C:/Users/THINKPAD/upesdemo/.git/
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ touch upesone.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ ls
+test.txt.txt  upesone.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git add upesone.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   upesone.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt.txt
+
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit
+[master (root-commit) e408ce2] asdsdasdasd
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 upesone.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit -am "upes"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ ls
+test.txt.txt  upesone.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git add test.txt.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit -am "upes"
+[master 58ad461] upes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit -am "upes"
+[master 60e2fd2] upes
+ 1 file changed, 13 insertions(+)
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit upesone.txt
+On branch master
+nothing to commit, working tree clean
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit test.txt.txt
+On branch master
+nothing to commit, working tree clean
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git atTUA
+git: 'atTUA' is not a git command. See 'git --help'.
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ ls
+test.txt.txt  upesone.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ gedit upesone.txt
+bash: gedit: command not found
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ gedit &upesone.txt
+[1] 832
+bash: gedit: command not found
+bash: upesone.txt: command not found
+[1]+  Exit 127                gedit
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    test.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git log
+commit 60e2fd21b43a9cc303da9cf2b55503ade4711c6e (HEAD -> master)
+Author: priodyuti <priodyuti.86@gmail.com>
+Date:   Mon May 30 14:18:38 2022 +0530
+
+    upes
+
+commit 58ad461227355ca7f20833abd2d3453db747d2b2
+Author: priodyuti <priodyuti.86@gmail.com>
+Date:   Mon May 30 14:15:34 2022 +0530
+
+    upes
+
+commit e408ce261091a944faa7e2342f0eca9f6a34c018
+Author: priodyuti <priodyuti.86@gmail.com>
+Date:   Mon May 30 13:59:18 2022 +0530
+
+    asdsdasdasd
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ add git test.txt
+bash: add: command not found
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git add test.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    test.txt.txt
+
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git commit -am "file_name_changed"
+[master 2852154] file_name_changed
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename test.txt.txt => test.txt (100%)
+
