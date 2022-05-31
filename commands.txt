@@ -42,32 +42,6 @@ $ cd upesdemo/
 THINKPAD@THINKPAD MINGW64 ~/upesdemo
 $ ls
 
-THINKPAD@THINKPAD MINGW64 ~/upesdemo
-$ cd
-
-THINKPAD@THINKPAD MINGW64 ~
-$ git log
-fatal: not a git repository (or any of the parent directories): .git
-
-THINKPAD@THINKPAD MINGW64 ~
-$ git log
-fatal: not a git repository (or any of the parent directories): .git
-
-THINKPAD@THINKPAD MINGW64 ~
-$ git log
-fatal: not a git repository (or any of the parent directories): .git
-
-THINKPAD@THINKPAD MINGW64 ~
-$ git init
-Initialized empty Git repository in C:/Users/THINKPAD/.git/
-
-THINKPAD@THINKPAD MINGW64 ~ (master)
-$ git log
-fatal: your current branch 'master' does not have any commits yet
-
-THINKPAD@THINKPAD MINGW64 ~ (master)
-$ cd upesdemo/
-
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ git init
 Initialized empty Git repository in C:/Users/THINKPAD/upesdemo/.git/
@@ -81,7 +55,7 @@ $ touch upesone.txt
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ ls
-test.txt.txt  upesone.txt
+upesone.txt
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ git add upesone.txt
@@ -102,16 +76,6 @@ Untracked files:
 
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git commit
-Aborting commit due to empty commit message.
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git commit
-[master (root-commit) e408ce2] asdsdasdasd
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 upesone.txt
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ git commit -am "upes"
 On branch master
 Untracked files:
@@ -122,16 +86,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ ls
-test.txt.txt  upesone.txt
+test.txt  upesone.txt
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git add test.txt.txt
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git commit -am "upes"
-[master 58ad461] upes
- 1 file changed, 1 insertion(+)
- create mode 100644 test.txt.txt
+$ git add test.txt
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ git commit -am "upes"
@@ -139,57 +97,9 @@ $ git commit -am "upes"
  1 file changed, 13 insertions(+)
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git commit upesone.txt
-On branch master
-nothing to commit, working tree clean
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git commit test.txt.txt
-On branch master
-nothing to commit, working tree clean
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git atTUA
-git: 'atTUA' is not a git command. See 'git --help'.
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ git status
 On branch master
 nothing to commit, working tree clean
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git status
-On branch master
-nothing to commit, working tree clean
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ ls
-test.txt.txt  upesone.txt
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ gedit upesone.txt
-bash: gedit: command not found
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ gedit &upesone.txt
-[1] 832
-bash: gedit: command not found
-bash: upesone.txt: command not found
-[1]+  Exit 127                gedit
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git status
-On branch master
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        deleted:    test.txt.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        test.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ git log
@@ -216,9 +126,6 @@ $ add git test.txt
 bash: add: command not found
 
 THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
-$ git add test.txt
-
-THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
 $ git status
 On branch master
 Changes to be committed:
@@ -236,4 +143,47 @@ $ git commit -am "file_name_changed"
 [master 2852154] file_name_changed
  1 file changed, 0 insertions(+), 0 deletions(-)
  rename test.txt.txt => test.txt (100%)
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git branch 
+* master
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master) %create branch
+$ git branch upescs  % create a branch name upescs  
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git branch % check the master and brance
+* master
+  upescs
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git checkout upescs      % switch to brance
+Switched to branch 'upescs'
+A       commands.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (upescs)
+$ git status
+On branch upescs
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   commands.txt
+
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (upescs)
+$ git branch
+  master
+* upescs
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (upescs)
+$ git checkout master % switch to master
+Switched to branch 'master'
+A       commands.txt
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git branch -d upescs  % Delete brance but before you should be in master, staying in brance folder it is not possible to delete
+Deleted branch upescs (was 2852154).
+
+THINKPAD@THINKPAD MINGW64 ~/upesdemo (master)
+$ git branch -a     % List all the master and brance
+* master
 
